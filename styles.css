@@ -1,0 +1,35 @@
+/* styles.css */
+
+/* Body background color */
+body {
+    background-color: #E0F7FA; /* Light sea blue background */
+    color: #003B5C; /* Dark sea blue text color */
+    font-family: Arial, sans-serif; /* Font style */
+}
+
+/* Header style */
+h1 {
+    color: #00796B; /* Teal color for headers */
+}
+
+/* Link color */
+a {
+    color: #0097A7; /* Blue color for links */
+}
+
+a:hover {
+    color: #00838F; /* Darker blue when hovering over links */
+}
+
+/* Button style */
+button {
+    background-color: #4DB6AC; /* Light teal background for buttons */
+    color: white; /* White text color */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+    background-color: #00796B; /* Darker teal on hover */
+}
