@@ -1,59 +1,95 @@
-/* styles.css */
-
-/* Body background color */
 body {
-    background-color: #E0F7FA; /* Light sea blue background */
-    color: #003B5C; /* Dark sea blue text color */
-    font-family: Arial, sans-serif; /* Font style */
-}
-
-/* Header style */
-h1 {
-    color: #00796B; /* Teal color for headers */
-}
-
-/* Link color */
-a {
-    color: #0097A7; /* Blue color for links */
-}
-
-a:hover {
-    color: #00838F; /* Darker blue when hovering over links */
-}
-
-/* Button style */
-button {
-    background-color: #4DB6AC; /* Light teal background for buttons */
-    color: white; /* White text color */
-    border: none; /* No border */
-    padding: 10px 15px; /* Padding */
-    cursor: pointer; /* Pointer cursor on hover */
-}
-
-button:hover {
-    background-color: #00796B; /* Darker teal on hover */
-}
-
-/* Form container style */
-.form-container {
-    margin-top: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa; /* Light seafoam background */
+    color: #004d40; /* Dark teal text */
+    margin: 0;
     padding: 20px;
-    border: 1px solid #00796B; /* Teal border */
-    border-radius: 8px; /* Rounded corners */
-    background-color: #FFFFFF; /* White background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Input field style */
+h1 {
+    font-size: 2.5em;
+    color: #00796b; /* Deep teal */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 1.5em;
+    text-align: center;
+    color: #004d40; /* Dark teal */
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Light background */
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
 input[type="text"],
-input[type="number"] {
-    width: 100%; /* Full width */
-    padding: 10px; /* Padding */
-    margin: 5px 0; /* Margin */
-    border: 1px solid #00796B; /* Teal border */
-    border-radius: 4px; /* Rounded corners */
+input[type="number"],
+button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #00796b; /* Deep teal border */
+    border-radius: 10px;
+    background: #ffffff; /* White input background */
+    color: #004d40; /* Dark teal text */
+    font-size: 1em;
+    transition: transform 0.2s, border-color 0.3s;
 }
 
 input[type="text"]:focus,
 input[type="number"]:focus {
-    border-color: #0097A7; /* Highlight border on focus */
+    border-color: #004d40; /* Darker teal on focus */
+    outline: none;
+}
+
+button {
+    background-color: #00796b; /* Deep teal */
+    color: #ffffff; /* White text */
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+}
+
+button:hover {
+    transform: scale(1.05); /* Pop-out effect */
+    background-color: #004d40; /* Darker teal */
+}
+
+.manager-button {
+    background-color: #4db6ac; /* Light teal */
+}
+
+.manager-button:hover {
+    background-color: #009688; /* Medium teal */
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 20px;
+    top: 20px;
+}
+
+.sidebar button {
+    margin-bottom: 10px; /* Space between buttons */
+    width: 150px; /* Fixed width for buttons */
+}
+
+.logo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 70px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
 }
